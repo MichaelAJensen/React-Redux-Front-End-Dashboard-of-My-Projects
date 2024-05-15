@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+@import url(./assets/stylesheets/Profile.css);
+@import url(./assets/stylesheets/DrumMachine.css);
+@import url(./assets/stylesheets/MagicEightBall.css);
+@import url(./assets/stylesheets/QuoteGenerator.css);
+@import url(./assets/stylesheets/Todo.css);
+@import url(./assets/stylesheets/Pomodoro.css);
+@import url(./assets/stylesheets/Navbar.css);
+@import url(./assets/stylesheets/MyBio.css);
+@import url(./assets/stylesheets/LinkedIn.css);
+@import url(./assets/stylesheets/GitHub.css);
+@import url(./assets/stylesheets/css/all.css);
+
+body {
+    height: 100vh;
+    width: 100vw;
+    /* overflow: scroll; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../src/assets/data/pexels-hristo-fidanov-1252890.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dashBoard {
+    height: 100vh;
+    width: 100vw;
+    /* overflow: scroll; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid-container {
+    height: 100vh;
+    width: 99vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        'todo profile quoteGenerator'
+        'todo drumMachine magicEightBall'
+        'todo pomodoro pomodoro';
+    gap: 10px;
+    background-color: slategray;
+    padding: 10px;
+    /* align-items: center; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.grid-container>div {
+    text-align: center;
+    /* padding: 10px 0; */
+    /* font-size: 30px; */
+    font-size: 175%;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 500px) {
+    .grid-container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "profile"
+            "todo"
+            "magicEightBall"
+            "quoteGenerator"
+            "drumMachine"
+            "pomodoro";
+        gap: 10px;
+        background-color: maroon;
+        /* padding: 10px; */
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-marquee {
+    z-index: 1;
+}
+
+marquee {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-shadow: 5px 5px 5px black;
+}
+
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+}
+
+.createAcctDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1reg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 5px 5px black;
+}
+
+.inputErrorMsg {
+    color: red;
+    text-shadow: 2px 2px white;
+    font-size: xx-large;
+}
+
+.regErrorMsg {
+    color: red;
+    text-shadow: 2px 2px white;
+    font-size: xx-large;
+}
+
+.img {
+    z-index: -100;
+    position: fixed;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    border-radius: 3%;
+    box-shadow: 5px 5px 5px black;
+}
+
+h1 {
+    color: white;
+    text-shadow: 5px 5px black;
+}
+
+input:hover {
+    border: 2px solid black;
+}
+
+.loginInputs:hover {
+    background: yellow;
+    border: 2px solid lightblue
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: x-large;
+    box-shadow: 5px 5px 5px black;
+}
+
+.button:hover {
+    background-color: lightblue;
+}
+
+.logoutBtn {
+    width: 100px;
+    box-shadow: 5px 5px 5px black;
+    justify-content: center;
+    /* margin-bottom: 2px;; */
+}
+
+.createAcctBtn:hover {
+    background-color: lightblue;
+    box-shadow: 5px 5px 5px black;
+}
+
+.createAcctBtn {
+    box-shadow: 5px 5px 5px black;
+}
+
+span {
+    font-size: x-large;
 }

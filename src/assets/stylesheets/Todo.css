@@ -1,0 +1,87 @@
+.todo {  
+    border: 2px solid;
+    grid-area: todo;
+}
+
+html,
+body,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+.wrapper2 {  
+    display: flex;
+    flex-direction: column;   
+    border: double;
+    grid-area: todo;
+    position: relative;  
+    color:white;
+    background: url(../data/pexels-matej-1074882.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 75%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;   
+    padding: 50px;
+} 
+
+.inputBox {  
+    display: flex;
+    align-items: center;  
+    background-color: white;
+}
+
+.button1 {
+    background-color: skyblue;    
+    align-items: center;
+    display:flex;
+    text-align: center;
+    justify-content: center;      
+} 
+
+.button2 {
+    background-color: skyblue;
+    width:80px;
+}
+
+ .form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+} 
+
+.watchlist {   
+    display: flex;
+    flex-direction: column;  
+    margin-top: 5px; 
+}
+
+.form-header {
+    color: white;   
+    text-align: center;  
+}
+.watchlist-header {   
+    text-align: center;
+    text-decoration: underline;
+}
+.already-watched {
+    color:white;     
+}
+
+.button3 {
+    width: 80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+    text-align: center;
+    margin-left: 24%;
+}
+    

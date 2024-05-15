@@ -1,0 +1,16 @@
+.navbar {   
+    border: 2px solid;  
+    list-style-type: none;
+    color: white;
+    background-color: black;  
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly;
+    height:5%;
+    align-items: center;
+    font-size: large;
+      
+}
+.link {
+    color:white;
+}

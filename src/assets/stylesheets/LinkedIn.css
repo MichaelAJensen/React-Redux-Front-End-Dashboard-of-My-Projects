@@ -1,0 +1,12 @@
+.linkedInLink {
+    font-size: xx-large;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+     /* background: url(../data/blue-trademark-angle-area-linkedin-9518894a67f1bf2d25fce21b31279b6d.png); */
+
+
+}
+.linkedinpic {
+    height: 50%;
+    z-index: -100;
+}

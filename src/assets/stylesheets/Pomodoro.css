@@ -1,0 +1,139 @@
+*,
+html,
+body,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+ body {
+    background-color: #040309;
+}  */
+
+.app-wrapper3 {
+    grid-area: pomodoro;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    background-color: bisque;
+    display: grid;
+    grid-template-areas:
+        'mainList currentSession currentSession workTime'
+        'mainList currentSession currentSession breakTime';
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(4, 24%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border:double;
+}
+
+.app-wrapper3>div {
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    text-align: center;
+    /* padding: 20px 0; */
+    /* font-size: 30px; */
+    margin: 2px;
+}
+
+/* .bgVideo {
+    z-index: -100;
+    position: fixed;
+    height: 37%;
+    width: 150%;
+    justify-self: center;
+} */
+
+.clockName {
+    /* color: white; */
+    grid-area: clockName;
+}
+
+.mainList {
+    border: 2px double;
+    /* color: white; */
+    grid-area: mainList;
+    box-shadow: 0px 0px 20px skyblue; 
+    /* background-color: skyblue; */
+
+}
+
+.currentSession {
+    border: 2px double;
+    /* color: white; */
+    grid-area: currentSession;
+    box-shadow: 0px 0px 20px skyblue; 
+  
+
+}
+
+.workTime {
+    border: 2px double;
+    /* color: white; */
+    grid-area: workTime;  
+    /* background-color: skyblue; */
+    box-shadow: 0px 0px 20px skyblue; 
+ 
+}
+
+.breakTime {
+    border: 2px double;
+    /* color: white; */
+    grid-area: breakTime;
+    box-shadow: 0px 0px 20px skyblue; 
+    /* background-color: skyblue; */
+}
+
+/* .button4 { */
+/* width: 50px; */
+/* height: 50px;  */
+/* margin: 10px; */
+/* border-radius: 50%; */
+/* } */
+
+/* .header-wrapper { */
+    /* color: white; */
+    /* text-shadow: 2px 2px 2px black; */
+/* } */
+
+/* .list-wrapper {
+    color: white;
+} */
+
+.list-wrapper>ul {
+    /* color: white; */
+    list-style-type: none;
+} 
+
+.addBtn {
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.startAndStop {
+    box-shadow: 2px 2px 2px black;
+    border: 1px solid black;
+    margin:2px;
+}
+
+/* .noMoreWork { */
+    /* text-shadow: 2px 2px 2px black; */
+    /* border: 1px solid black; */
+/* } */
+
+/* .addForm {
+    width:100%;
+    height:100%;
+} */
+.delete-task-btn {
+    box-shadow: 2px 2px 2px black;
+}
+
+.edit-task-btn {
+    box-shadow: 2px 2px 2px black;
+}

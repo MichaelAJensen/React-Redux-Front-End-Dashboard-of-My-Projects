@@ -1,0 +1,143 @@
+.drumMachine {
+  grid-area: drumMachine;
+  border: 2px solid;
+}
+
+/* *,/* for drum */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  background-color: bisque;
+  border: 2px solid black;
+  align-items: center;
+  box-shadow: 5px 5px 5px black;
+
+}
+
+/* for dog */
+.wrapper2 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  border: 5px double black;
+  align-items: center;
+}
+
+.drumMachineHeader {
+  margin-bottom: 2%;
+}
+
+#display {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  /* background-color: skyblue;  */
+}
+
+.drum-pad {
+  margin: 5px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  /* border-radius: 10px; */
+  width: 100%;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 5px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 3%;
+  width: 1%;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: black;
+  
+}
+
+.volume {
+  box-shadow: none;
+  width: 50%;
+  border: 5px double;
+}
+
+.bankDiv {
+  background-color: bisque;
+}
+
+.outside {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  grid-area: drumMachine;
+  border: double;
+  position: relative;
+}
+
+.dialog {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  background: url(../data/gabriel-barletta--lWcaUVJ39Y-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 100%;
+  /* background-size:cover;
+  background-repeat: no-repeat;
+  background-position: 75%; */
+}
+
+.closeBtn {
+  box-shadow: 5px 5px 5px black;
+  margin-bottom: 10px;
+}
+
+.bank {
+  margin-bottom: 5px;
+  box-shadow: 5px 5px 5px black;
+  margin-top: 10px;
+}
+
+.volumeTag {
+  font-size: smaller;
+}
+
+.showBtn {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px black;
+}
+
+.icon {
+  font-size: xx-large;
+}

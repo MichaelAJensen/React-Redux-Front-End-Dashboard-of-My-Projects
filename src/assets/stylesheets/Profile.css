@@ -1,0 +1,23 @@
+.profile {
+    background-color: bisque;
+    border: double;
+    grid-area: profile;
+    list-style-type: none;
+   text-align: center;
+}
+.profileUls {
+    list-style-type: none;
+}
+.logoutBtn {
+    margin-bottom: 5px;
+   
+}
+/* .linkMyBio {
+    color:black
+} */
+   
+   
+   
+    
+
+ 

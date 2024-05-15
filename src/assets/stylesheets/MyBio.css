@@ -1,0 +1,11 @@
+.myBioPage {
+    display:flex;
+    flex-direction: column;    
+    text-align: center;
+    font-size: xx-large;
+    text-shadow: 2px 2px 2px black;
+}
+.bioptag {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
